@@ -9,13 +9,15 @@
         <div class="row">
             <div class="col-md-12">
                 <a href="{{route('add-post')}}" class="btn btn-success mb-4">Add new acticle</a>
+                @foreach($posts as $post)
                 <div class="card">
-                    <h5 class="card-header">Featured</h5>
+                    <h5 class="card-header">{{$post->name}}</h5>
                     <div class="card-body">
                         <a href="#" class="btn btn-primary">Edit</a>
                         <a href="#" class="btn btn-primary " style="background: red">Delete</a>
                     </div>
                 </div>
+                @endforeach
             </div>
         </div>
     </div>
