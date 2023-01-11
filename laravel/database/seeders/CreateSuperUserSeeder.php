@@ -19,17 +19,19 @@ class CreateSuperUserSeeder extends Seeder
     public function run()
     {
         $superUser = User::create([
-           'email' => 'admin@gmail.com',
+            'email' => 'admin@gmail.com',
             'name' => 'Admin',
-            'password' => Hash::make('123456789'),
+            'password' => Hash::make('1234567890'),
             'created_at' => Carbon::now(),
-            'update_at' => Carbon::now(),
+            'updated_at' => Carbon::now(),
         ]);
+
         Role::create([
-           'name'=>'super-user',
+            'name' => 'super-user',
             'created_at' => Carbon::now(),
-            'update_at' => Carbon::now(),
+            'updated_at' => Carbon::now(),
         ]);
+
         $superUser->assignRole('super-user');
     }
 }
