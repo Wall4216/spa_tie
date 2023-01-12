@@ -113,6 +113,7 @@
       <path value="$PROJECT_DIR$/laravel/vendor/doctrine/inflector" />
       <path value="$PROJECT_DIR$/laravel/vendor/doctrine/instantiator" />
       <path value="$PROJECT_DIR$/laravel/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/laravel/vendor/fruitcake/laravel-cors" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.1" />
