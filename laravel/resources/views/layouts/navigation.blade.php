@@ -16,12 +16,12 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                     @role('super-user')
-                    <x-nav-link :href="route('roles.index')" :active="request()->routeIs('roles.index')">
-                        Roles
-                    </x-nav-link>
-                    <x-nav-link :href="route('users.index')" :active="request()->routeIs('users.index')">
-                        Users
-                    </x-nav-link>
+                        <x-nav-link :href="route('roles.index')" :active="request()->routeIs('roles.index')">
+                            Roles
+                        </x-nav-link>
+                        <x-nav-link :href="route('users.index')" :active="request()->routeIs('users.index')">
+                            Users
+                        </x-nav-link>
                     @endrole
                 </div>
             </div>
@@ -47,7 +47,7 @@
                             @csrf
 
                             <x-dropdown-link :href="route('logout')"
-                                             onclick="event.preventDefault();
+                                    onclick="event.preventDefault();
                                                 this.closest('form').submit();">
                                 {{ __('Log Out') }}
                             </x-dropdown-link>
@@ -89,7 +89,7 @@
                     @csrf
 
                     <x-responsive-nav-link :href="route('logout')"
-                                           onclick="event.preventDefault();
+                            onclick="event.preventDefault();
                                         this.closest('form').submit();">
                         {{ __('Log Out') }}
                     </x-responsive-nav-link>
